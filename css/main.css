@@ -1,0 +1,220 @@
+@import "reset.css";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    color: #27332D;
+    background: #FADB3F;
+}
+
+.shadow1 {
+    box-shadow: 0 9px 12px rgba(0, 0, 0, 0.15);
+}
+.shadow2 {
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+.container {
+    padding-inline: 6em;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+.light-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+.h-nav {
+    color: #27332D;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+/*navbar*/
+.navbar {
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+.nav-list {
+    display: flex;
+    column-gap: 6em;
+    margin-left: auto;
+    margin-right: 0;
+}
+.nav-list__link {
+    color: #27332D;
+}
+.nav-list__link--active {
+    color: rgba(39, 51, 45, 0.8);
+    border-bottom: 2px solid #27332D;
+}
+.nav-list__link:hover {
+    color: rgba(39, 51, 45, 0.8);
+    border-bottom: 2px solid #27332D;
+}
+
+/*footer*/
+footer {
+    color: #E6E4E1;
+}
+.footer-body {
+    background: #27332D;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.footer-main {
+    display: flex;
+    column-gap: 2em;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/*index.html*/
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6em;
+    padding-left: 6em;
+}
+.block {
+    padding: 1em;
+    background: #E6E4E1;
+    border-radius: 20px;
+    height: max-content;
+}
+.block__header {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    padding-bottom: 1em;
+}
+
+/*page_1*/
+.page_1-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #E6E4E1;
+    grid-gap: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.card-overlay {
+    padding: 1em;
+    background: #27332D;
+    border-radius: 10px;
+}
+.card-overlay>h4 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+.card {
+    background: #E6E4E1;
+    display: grid;
+    padding: 1em;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 10px;
+}
+.card img {
+    border-radius: 10px;
+}
+.card__body {
+    color: #27332D;
+    margin-left: 1em;
+    border: 1px solid rgba(39, 51, 45, 0.05);
+    border-radius: 10px;
+    padding: 1em;
+}
+.card__body h4 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+/*page_2*/
+.page_2-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.page_2-grid > img:nth-child(1) {
+    grid-column: 1 / 8;
+}
+.page_2-grid > img:nth-child(2) {
+    grid-column: 8 / -1;
+}
+.page_2-grid > img:nth-child(3) {
+    grid-column: 1 / 6;
+}
+.page_2-grid > img:nth-child(4) {
+    grid-column: 6 / 10;
+}
+.page_2-grid > img:nth-child(5) {
+    grid-column: 10 / -1;
+    grid-row: 2 / 4;
+}
+.page_2-grid > img:nth-child(6) {
+    grid-column: 1 / 4;
+}
+.page_2-grid > img:nth-child(7) {
+    grid-column: 4 / 7;
+}
+.page_2-grid > img:nth-child(8) {
+    grid-column: 7 / 10;
+}
+
+/*page_3*/
