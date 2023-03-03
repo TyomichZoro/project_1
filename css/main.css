@@ -612,4 +612,8 @@ footer {
     .card {
         grid-template-columns: 1fr;
     }
+    .card__body {
+        margin-left: 0;
+        border: none;
+    }
 }
